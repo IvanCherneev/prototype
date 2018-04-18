@@ -1,0 +1,13 @@
+{
+  "name": "prototype",
+  "description": "Test project 'prototype'",
+  "authors": [
+    "IvanCherneev"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/IvanCherneev/prototype",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize-css": "^8.0.0"
+  }
+}

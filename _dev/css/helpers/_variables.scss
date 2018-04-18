@@ -1,0 +1,63 @@
+// Переменные размеров для adjustment
+$container-width: 1120px;
+
+// Цветовая палитра
+$one-black: #000000;
+$two-black: #666666;
+$three-black: #b3b3b3;
+
+$one-white: #ffffff;
+$two-white: #f2f2f2;
+
+$one-blue: #1698d9;
+$two-blue: #2ea8e6;
+
+$one-red: #d91667;
+$two-red: #e62e7a;
+
+$one-yellow: #ffff66;
+
+// Цвет страницы
+$page-bg-color: $one-black;
+
+/* -------------------------------
+*	Основные цвета для блока Main
+---------------------------------*/
+$main-title-text-color: $one-white;
+
+// default
+$main-block-bg-color: $two-white;
+$main-block-text-color-1: $one-black;
+$main-block-text-color-2: $two-black;
+$main-block-text-caption-color: $one-white;
+$main-block-link-color: $one-blue;
+$main-block-label-bg-color: $one-blue;
+$main-block-label-text-color: $one-white;
+$main-block-border-color: $one-blue;
+
+// hover
+$main-block-link-color-hover: $two-blue;
+$main-block-label-bg-color-hover: $two-blue;
+$main-block-border-color-hover: $two-blue;
+
+// selected
+$main-block-label-bg-color-selected: $one-red;
+$main-block-border-color-selected: $one-red;
+
+// selected-hover
+$main-block-label-bg-color-selected-hover: $two-red;
+$main-block-border-color-selected-hover: $two-red;
+$main-block-text-color-selected-hover: $two-red;
+
+// disabled
+$main-block-label-bg-color-disabled: $three-black;
+$main-block-text-color-disabled: $three-black;
+$main-block-border-color-disabled: $three-black;
+$main-block-text-caption-color-disabled: $one-yellow;
+
+/* ------------------
+* Точки останова
+---------------------*/
+$desktop: 1220px;
+$tablets: 1100px;
+$phones: 680px;

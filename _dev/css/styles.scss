@@ -1,0 +1,15 @@
+// Подключение специальных файлов
+@import "helpers/mixins";
+@import "helpers/variables";
+
+// Подключение базовых файлов
+@import "base/adjustment";
+@import "base/typography";
+
+// Подключение плагинов
+
+// Подключение файлов форматирования элементов страницы
+@import "layout/content";
+
+// Подключение файлов с компонентами страницы
+@import "components/buttons";
