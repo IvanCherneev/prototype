@@ -1,0 +1,36 @@
+.weight {
+	position: absolute;
+	bottom: 11px;
+	right: 11px;
+	background-color: $main-block-label-bg-color;
+	height: 81px;
+	width: 81px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 0;
+	z-index: 4;
+
+	&::before {
+		content: " ";
+		height: 100%;
+		@include inlineblock(middle);
+	}
+}
+
+.weight__content {
+	@include inlineblock(middle);
+	line-height: 0.9;
+}
+
+.weight__count,
+.weight__unit {
+	color: $main-block-label-text-color;	
+}
+
+.weight__count {
+	font-size: 42px;
+}
+
+.weight__unit {
+	font-size: 21px;
+}

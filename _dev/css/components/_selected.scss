@@ -1,0 +1,19 @@
+.selected {
+
+	& .card {
+		border-color: $main-block-border-color-selected;
+
+		&::after {
+			border-color: $main-block-border-color-selected;
+		}
+
+		&::before {
+			border-color: $main-block-border-color-selected;
+		}
+	}
+	
+	& .weight {
+		background-color: $main-block-label-bg-color-selected;
+	}
+
+}

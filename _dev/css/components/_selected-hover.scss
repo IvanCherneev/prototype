@@ -1,0 +1,23 @@
+.selected-hover {
+
+	& .card {
+		border-color: $main-block-border-color-selected-hover;
+
+		&::after {
+			border-color: $main-block-border-color-selected-hover;
+		}
+
+		&::before {
+			border-color: $main-block-border-color-selected-hover;
+		}
+	}
+
+	.card__title {
+		color: $main-block-text-color-selected-hover;
+	}
+	
+	& .weight {
+		background-color: $main-block-label-bg-color-selected-hover;
+	}
+
+}

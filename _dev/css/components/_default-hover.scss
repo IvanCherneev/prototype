@@ -1,0 +1,24 @@
+.default-hover {
+
+	& .card {
+		cursor: pointer;
+		border-color: $main-block-border-color-hover;
+
+		&::after {
+			border-color: $main-block-border-color-hover;
+		}
+
+		&::before {
+			border-color: $main-block-border-color-hover;
+		}
+	}
+	
+	& .weight {
+		background-color: $main-block-label-bg-color-hover;
+	}
+
+	& .product__bay-link {
+		color: $main-block-link-color-hover;	
+	}
+
+}

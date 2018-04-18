@@ -1,0 +1,108 @@
+.card {
+	height: 437px;
+	border: 4px solid $main-block-border-color;
+	border-top: none;
+	border-radius: 0 0 10px 10px;
+	position: relative;
+	background-color: $main-block-bg-color;
+	margin-bottom: 11px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 160px;
+		height: 39px;
+		top: -43px;
+		left: 17.5px;
+		background-color: $main-block-bg-color;
+		border-top: 4px solid $main-block-border-color;
+		border-left: 5px solid $main-block-border-color;
+		transform: skew(-45deg);
+		z-index: 1;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 160px;
+		height: 39px;
+		top: -43px;
+		right: -4px;
+		background-color: $main-block-bg-color;
+		border-top: 4px solid $main-block-border-color;
+		border-right: 4px solid $main-block-border-color;
+		border-top-right-radius: 10px;
+		z-index: 2;
+	}
+
+	/* &:hover {
+		cursor: pointer;
+		border-color: $main-block-border-color-hover;
+	
+		& .weight {
+			background-color: $main-block-label-bg-color-hover;
+		}
+	
+		& + .product__bay > .product__bay-link {
+			color: $main-block-link-color-hover;	
+		}
+	
+		&::after {
+			border-color: $main-block-border-color-hover;
+		}
+	
+		&::before {
+			border-color: $main-block-border-color-hover;
+		}
+	} */
+}
+
+.card__title {
+	font-size: 16px;
+	position: absolute;
+	top: -25px;
+	left: 44px;
+	color: $main-block-text-color-2;
+	z-index: 3;
+}
+
+.card__inner {
+	background: $main-block-bg-color url(../images/funbox_logo.png) -28px 163px no-repeat;
+	background-size: 370px 361px;
+	height: 433px;
+	line-height: 1.2;
+	padding: 0 42px;
+	border-radius: 0 0 6px 6px;
+}
+
+.card__sub-name,
+.card__panel {
+	padding-left: 2px;
+}
+
+.card__panel-item {
+	color: $main-block-text-color-2;
+}
+
+.card__name,
+.card__sub-name {
+	font-weight: bold;
+	color: $main-block-text-color-1;
+}
+
+.card__name {
+	font-size: 48px;
+}
+
+.card__sub-name {
+	font-size: 24px;
+	margin-bottom: 12px;
+}
+
+.card__panel-item {
+	font-size: 14px;
+
+	& span {
+		font-weight: bold;
+	}
+}

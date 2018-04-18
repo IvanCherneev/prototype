@@ -1,0 +1,37 @@
+.disabled {
+
+	& .card {
+		border-color: $main-block-border-color-disabled;
+
+		&::after {
+			border-color: $main-block-border-color-disabled;
+		}
+
+		&::before {
+			border-color: $main-block-border-color-disabled;
+		}
+	}
+
+	& .card__title {
+		color: transparentize($main-block-text-color-disabled, 0.5);
+	}
+
+	& .card__inner {
+		opacity: 0.5;
+	}
+
+	& .card__name,
+		.card__sub-name,
+		.card__panel-item {
+			color: $main-block-text-color-disabled;	
+	}
+
+	& .weight {
+		background-color: $main-block-label-bg-color-disabled;
+	}
+
+	& .product__bay {
+		color: $main-block-text-caption-color-disabled;
+	}
+
+}

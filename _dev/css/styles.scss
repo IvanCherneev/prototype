@@ -8,8 +8,16 @@
 
 // Подключение плагинов
 
-// Подключение файлов форматирования элементов страницы
+// Подключение элементов страницы
 @import "layout/content";
 
-// Подключение файлов с компонентами страницы
-@import "components/buttons";
+// Подключение компонентов страницы
+@import "components/product";
+@import "components/card";
+@import "components/weight";
+@import "components/default-hover";
+@import "components/selected";
+@import "components/selected-hover";
+@import "components/disabled";
+
+
