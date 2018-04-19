@@ -20,3 +20,6 @@
 	<li>Устанавливаем bower-пакеты: <b><i>bower i</i></b></li>
 	<li>Запускаем шаблон: <b><i>gulp</i></b></li>
 </ol>
+
+<h2>Как cкачать, установить и начать пользоваться:</h2>
+<p><a href="https://ivancherneev.github.io/proj5/index.html">prototype</a></p>
