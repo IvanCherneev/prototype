@@ -1,6 +1,7 @@
 .selected {
 
-	& .card {
+	.card {
+		cursor: pointer;
 		border-color: $main-block-border-color-selected;
 
 		&::after {
@@ -12,8 +13,16 @@
 		}
 	}
 	
-	& .weight {
+	.weight {
 		background-color: $main-block-label-bg-color-selected;
+	}
+	
+	.product__buy {
+		display: none;
+	}
+
+	.product__information {
+		display: block;
 	}
 
 }

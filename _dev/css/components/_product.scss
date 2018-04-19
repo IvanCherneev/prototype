@@ -5,11 +5,12 @@
 
 .product__item {
 	display : inline-block;
-	width : 400px;
+	width : rem(400px);
 	vertical-align: top;
 	text-align: left;
-	font-size: 16px;
-	padding: 0 40px;
+	font-size: rem(16px);
+	padding: 0 rem(40px);
+	margin-bottom: rem(70px); // добавлен из-за расширения контента, если блоков > 3 
 
 
 	&:first-child {
@@ -17,27 +18,33 @@
 	}
 
 	@include desktop {
-		padding: 0 20px;
-		width : 360px;
+		padding: 0 rem(20px);
+		width : rem(360px);
 	}
 	
-	@include tablets {
-		margin-bottom: 70px;
+	@include phones {
+		//margin-bottom: 70px; закоментирован из-за "margin-bottom: 70px" у .product__item
 
 		&:last-child {
-			margin-bottom: 40px;
+			margin-bottom: rem(40px);
 		}
 	}
 }
 
-.product__bay {
-	color: $main-block-text-caption-color;
-	font-size: 13px;
-	text-align: center;
+.product__buy,
+.product__ended,
+.product__information {
+	font-size: rem(13px);
+	text-align: center;	
 }
 
-.product__bay-link {
-	border-bottom: 1px dashed $main-block-link-color;
+.product__buy,
+.product__information {
+	color: $main-block-text-caption-color;
+}
+
+.product__buy-link {
+	border-bottom: rem(1px) dashed $main-block-link-color;
 
 	&:link {
 		color: $main-block-link-color;
@@ -54,4 +61,13 @@
 		text-decoration: none;
 	}
 
+}
+
+.product__information {
+	display: none;
+}
+
+.product__ended {
+	color: $main-block-text-caption-color-disabled;
+	display: none;
 }

@@ -1,0 +1,23 @@
+mixin product(product, disabledItem, selectedHoverItem)
+	ul.product
+		each item, ndx in product
+			li(class = 'product__item' + ( (ndx === disabledItem['disabled-id']) ? ' disabled' : '') ) 
+				.product__card.card
+					.card__title= item['title']
+					.card__question= selectedHoverItem['question']
+					.card__inner
+						.card__name= item['name']
+						.card__sub-name= item['sub-name']
+						ul.card__panel
+							each value, key in item["list"]
+								li.card__panel-item
+									span= value["count"] + ' '
+									| #{value["desc"]}
+					.card__weight.weight
+						.weight__content
+							.weight__count= item['weight-count']
+							.weight__unit= item['weight-unit']
+				.product__buy= item['buy'] 
+					a.product__buy-link(href='#')= item['buy-link']
+				.product__information= item['information']
+				.product__ended= disabledItem['disabled-text-before'] + ' ' + item['sub-name'] + ' ' + disabledItem['disabled-text-after']

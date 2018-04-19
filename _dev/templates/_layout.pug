@@ -1,0 +1,23 @@
+include _product
+
+doctype html
+html(lang='ru-RU')
+	
+	include _head
+
+	body
+		.wrapper
+			.maincontent
+				main.main
+					.container
+						.content
+
+							block content-title
+								.content__title Ты сегодня покормил кота?
+							
+							.content__box
+								
+								block content			
+		
+		script(src='js/vendor.js?rev=@@hash')
+		script(src='js/main.min.js?rev=@@hash')

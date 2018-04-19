@@ -1,14 +1,19 @@
 .content {
+	margin-top: rem(60px); // добавлен из-за "margin-bottom: 70px;" у класса .product__item
 	white-space: normal;
 	text-align: left;
 	@include inlineblock(middle);
+
+	@include phones {
+		margin-top: 0; // добавлен из-за "margin-top: 60px;" у класса .content
+	}
 }
 
 .content__title {
-	font-size: 36px;
+	font-size: rem(36px);
 	color: $main-title-text-color;
 	@include exo2(thin);
 	text-align: center;
-	margin-bottom: 61px;
+	margin-bottom: rem(61px);
 }
 

@@ -1,6 +1,7 @@
 .selected-hover {
 
-	& .card {
+	.card {
+		cursor: pointer;
 		border-color: $main-block-border-color-selected-hover;
 
 		&::after {
@@ -13,10 +14,14 @@
 	}
 
 	.card__title {
-		color: $main-block-text-color-selected-hover;
+		display: none;
+	}
+
+	.card__question {
+		display: block;
 	}
 	
-	& .weight {
+	.weight {
 		background-color: $main-block-label-bg-color-selected-hover;
 	}
 

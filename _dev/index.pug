@@ -1,83 +1,83 @@
-doctype html
-html(lang='ru-RU')
-	head
-		meta(charset='UTF-8')
-		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-		title Главная страница
-		meta(name='description', content='')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
-		link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
-		link(rel='stylesheet', href='css/vendor.css?rev=@@hash')
-		link(rel='stylesheet', href='css/main.min.css?rev=@@hash')
-	body
-		.wrapper
-			.maincontent
-				main.main
-					.container
-						.content
-							.content__title Ты сегодня покормил кота?
-							.content__box
-								ul.product
-									li.product__item
-										.product__card.card
-											.card__title Сказочное заморское яство
-											.card__inner
-												.card__name Нямушка
-												.card__sub-name с фуа-гра
-												ul.card__panel
-													li.card__panel-item
-														span 10 
-														| порций
-													li.card__panel-item
-														span 
-														| мышь в подарок
-											.card__weight.weight
-												.weight__content
-													.weight__count 0,5
-													.weight__unit кг
-										.product__bay Чего сидишь? Порадуй котэ, 
-											a.product__bay-link(href='#') купи.
-									li.product__item
-										.product__card.card
-											.card__title Сказочное заморское яство
-											.card__inner
-												.card__name Нямушка
-												.card__sub-name с рыбой
-												ul.card__panel
-													li.card__panel-item
-														span 40 
-														| порций
-													li.card__panel-item
-														span 2 
-														| мыши в подарок
-											.card__weight.weight
-												.weight__content
-													.weight__count 2
-													.weight__unit кг
-										.product__bay Чего сидишь? Порадуй котэ, 
-											a.product__bay-link(href='#') купи.
-									li.product__item.disabled
-										.product__card.card
-											.card__title Сказочное заморское яство
-											.card__inner
-												.card__name Нямушка
-												.card__sub-name с курой
-												ul.card__panel
-													li.card__panel-item
-														span 100 
-														| порций
-													li.card__panel-item
-														span 5 
-														| мышей в подарок
-													li.card__panel-item
-														span 
-														| заказчик доволен
-											.card__weight.weight
-												.weight__content
-													.weight__count 5
-													.weight__unit кг
-										.product__bay Чего сидишь? Порадуй котэ, 
-											a.product__bay-link(href='#') купи.				
-		
-		script(src='js/vendor.js?rev=@@hash')
-		script(src='js/main.min.js?rev=@@hash')
+extends ./templates/_layout
+
+block title
+	title Главная страница
+
+block content-title
+	.content__title Ты сегодня покормил кота?
+
+block content
+	+product([
+		{
+			"title": 			"Сказочное заморское яство",
+			"name": 			"Нямушка",
+			"sub-name": 		"с фуа-гра",
+			"list": {
+				"item1": {
+					"count": 	"10",
+					"desc": 	"порций"
+				},
+				"item2": {
+					"count": 	"",
+					"desc": 	"мышь в подарок"
+				}
+			},
+			"weight-count": 	"0,5",
+			"weight-unit": 		"кг",
+			"buy": 				"Чего сидишь? Порадуй котэ, ",
+			"buy-link": 		"купи",
+			"information": 		"Печень утки разварная с артишоками."
+		}, 
+		{
+			"title": 			"Сказочное заморское яство",
+			"name": 			"Нямушка",
+			"sub-name": 		"с рыбой",
+			"list": {
+				"item1": {
+					"count": 	"40",
+					"desc": 	"порций"
+				},
+				"item2": {
+					"count": 	"2",
+					"desc": 	"мыши в подарок"
+				}
+			},
+			"weight-count": 	"2",
+			"weight-unit": 		"кг",
+			"buy": 				"Чего сидишь? Порадуй котэ, ",
+			"buy-link": 		"купи",
+			"information": 		"Головы щучьи с чесноком да свежайшая сёмгушка."
+		},
+		{
+			"title": 			"Сказочное заморское яство",
+			"name": 			"Нямушка",
+			"sub-name": 		"с курой",
+			"list": {
+				"item1": {
+					"count": 	"100",
+					"desc": 	"порций"
+				},
+				"item2": {
+					"count": 	"5",
+					"desc": 	"мышей в подарок"
+				},
+				"item3": {
+					"count": 	"",
+					"desc": 	"заказчик доволен"
+				}
+			},
+			"weight-count": 	"5",
+			"weight-unit": 		"кг",
+			"buy": 				"Чего сидишь? Порадуй котэ, ",
+			"buy-link": 		"купи",
+			"information": 		"Филе из цыплят с трюфелями в бульоне."
+		}
+	],
+	{
+		"disabled-id": 			2,
+		"disabled-text-before": "Печалька,",
+		"disabled-text-after": 	"закончился."
+	},
+	{
+		"question": 			"Котэ не одобряет?"
+	})

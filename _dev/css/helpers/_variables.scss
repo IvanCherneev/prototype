@@ -1,5 +1,5 @@
 // Переменные размеров для adjustment
-$container-width: 1120px;
+$container-width: rem(1120px);
 
 // Цветовая палитра
 $one-black: #000000;
@@ -60,4 +60,4 @@ $main-block-text-caption-color-disabled: $one-yellow;
 ---------------------*/
 $desktop: 1220px;
 $tablets: 1100px;
-$phones: 680px;
+$phones: 736px;

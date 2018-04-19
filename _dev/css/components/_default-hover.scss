@@ -1,6 +1,6 @@
 .default-hover {
 
-	& .card {
+	.card {
 		cursor: pointer;
 		border-color: $main-block-border-color-hover;
 
@@ -13,11 +13,11 @@
 		}
 	}
 	
-	& .weight {
+	.weight {
 		background-color: $main-block-label-bg-color-hover;
 	}
 
-	& .product__bay-link {
+	.product__buy-link {
 		color: $main-block-link-color-hover;	
 	}
 
